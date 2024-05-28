@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.todo_application.Adapter.ToDoAdapter;
 import com.example.todo_application.Model.ToDoModel;
+import com.example.todo_application.Signup;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentChange;
@@ -143,7 +144,7 @@ public class Home extends AppCompatActivity implements OnDialogCloseListner {
     private void showData() {
         // Query Firestore for tasks belonging to the current user, ordered by time
         query = firestore.collection("task")
-                .whereEqualTo("userid", UID)
+                //.whereEqualTo("userid", UID)
                 .orderBy("time", Query.Direction.DESCENDING);
 
         listenerRegistration = query.addSnapshotListener(new EventListener<QuerySnapshot>() {
