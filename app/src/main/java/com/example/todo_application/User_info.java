@@ -48,7 +48,7 @@ public class User_info extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 // User clicked Yes button
                                 auth.signOut();
-                                Intent intent = new Intent(User_info.this, Signup.class);
+                                Intent intent = new Intent(User_info.this, SignIn.class);
                                 startActivity(intent);
                                 finish();
                             }

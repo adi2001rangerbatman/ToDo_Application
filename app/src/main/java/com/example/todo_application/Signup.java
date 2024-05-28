@@ -33,7 +33,7 @@ public class Signup extends AppCompatActivity {
      ProgressBar progressBar;
      FirebaseAuth auth;
      FirebaseFirestore firestore;
-     String UID;
+     public String UID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
